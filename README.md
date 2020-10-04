@@ -17,7 +17,7 @@ PRJ=myapp && \
 git init && \
 git add . && \
 git commit -m 'Initial import' && \
-heroku create:app $PRJ && \
+heroku create $PRJ && \
 heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` && \
 git push heroku master
 ```
