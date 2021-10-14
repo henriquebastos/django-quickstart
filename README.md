@@ -4,6 +4,7 @@
 
 This template includes:
 * Easy settings setup with [Decouple](https://github.com/henriquebastos/python-decouple)
+* Support to pytest and pytest-django
 * Use of URL's to manage database access
 * Static assets serving with dj-static with a WSGI server
 
