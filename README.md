@@ -47,3 +47,21 @@ heroku create myproject
 heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` ALLOWED_HOSTS="*"
 git push heroku master
 ```
+
+## One liner
+
+```
+PROJECT_NAME=myproject                  && \
+python -m venv .venv                    && \
+source .venv/bin/activate               && \
+pip install django                      && \
+django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env $PROJECT_NAME . && \
+pip install --prefer-binary -r requirements.txt         && \
+git init                                && \
+git add .                               && \
+git commit -m 'Initial import'          && \
+heroku create $PROJECT_NAME             && \
+heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` ALLOWED_HOSTS="*" && \
+git push heroku master
+```
+
