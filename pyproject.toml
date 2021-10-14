@@ -1,7 +1,0 @@
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-s -ra -q"
-testpaths = [
-    "tests",
-]
-DJANGO_SETTINGS_MODULE={{ project_name }}.settings

@@ -55,7 +55,7 @@ python -m venv .venv && \
 source .venv/bin/activate && \
 python -m pip install --upgrade pip && \
 python -m pip install django
-django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env,pyproject.toml $PROJECT_NAME . && \
+django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env,pytest.ini $PROJECT_NAME . && \
 pip install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \
