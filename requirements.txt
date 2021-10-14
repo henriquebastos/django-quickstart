@@ -1,3 +1,4 @@
+wheel
 dj-database-url
 dj-static
 Django
