@@ -3,11 +3,8 @@
 ### IMPORTANT: Don't forget to specify the names placeholder, not doing so may cause errors.
 
 ```
-FOLDER_NAME=myfolder                    && \
 DJANGO_PROJECT_NAME=my_django_project   && \
 HEROKU_APP_NAME=my-heroku-project       && \
-mkdir $FOLDER_NAME                      && \
-cd $FOLDER_NAME                         && \
 python -m venv .venv                    && \
 source .venv/bin/activate               && \
 pip install django                      && \
