@@ -30,7 +30,7 @@ And then, proceed with the installation of quickstart's requirements.
 
 ```
 
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 Last but not least, deploy our app in heroku:
@@ -55,7 +55,7 @@ python -m venv .venv && \
 source .venv/bin/activate && \
 python -m pip install --upgrade pip && \
 python -m pip install django
-django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env $PROJECT_NAME . && \
+django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env,pyproject.toml $PROJECT_NAME . && \
 pip install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \
