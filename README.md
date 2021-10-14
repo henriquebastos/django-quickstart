@@ -6,7 +6,6 @@ This template includes:
 * Easy settings setup with [Decouple](https://github.com/henriquebastos/python-decouple)
 * Use of URL's to manage database access
 * Static assets serving with dj-static with a WSGI server
-* A [one-block setup](https://github.com/henriquebastos/django-quickstart/blob/master/one-block-setup.md) ready to **deploy in seconds** into heroku, 
 
 ## Usage
 
@@ -57,7 +56,7 @@ source .venv/bin/activate && \
 python -m pip install --upgrade pip && \
 python -m pip install django
 django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env $PROJECT_NAME . && \
-pip install --prefer-binary -r requirements.txt && \
+pip install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \
 git commit -m 'Initial import' && \
